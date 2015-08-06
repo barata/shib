@@ -6,10 +6,14 @@ var servers = exports.servers = {
   storage: {
     datadir: './var'
   },
+  auth: {
+    type: 'dict_auth',
+    dict_file: './passwd'
+  },
   executer: {
-    name: 'hiveserver', // or 'hiveserver2', 'presto'
+    name: 'hiveserver2', // or 'hiveserver2', 'presto'
     host: 'localhost',
-    port: 10000,
+    port: 10001,
     support_database: true,
     default_database: 'default'
   },
