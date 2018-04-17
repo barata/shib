@@ -12,7 +12,7 @@ var servers = exports.servers = {
   },
   executer: {
     name: 'hiveserver2',
-    host: 'hive.bigdata.chaordicsystems.com',
+    host: 'hive.platform.chaordicsystems.com',
     port: 10001,
     support_database: true,
     default_database: 'default'
