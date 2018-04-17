@@ -436,7 +436,10 @@ function pseudo_status(query_state){
 app.get('/status/:queryid', function(req, res){
   shibclient(req).query(req.params.queryid, function(err, query){
     if (err) { error_handle(req, res, err); this.end(); return; }
-    res.send(pseudo_status(query.state));
+    if (query === null)
+      res.send('query not found', 404);
+    else
+      res.send(pseudo_status(query.state));
     this.end();
   });
 });
