@@ -4,7 +4,7 @@ var servers = exports.servers = {
   query_timeout: null, // seconds. (null:shib will wait query response infinitely).
   setup_queries: [],
   storage: {
-    datadir: "/mnt/hadoop/shib"
+    datadir: "/mnt/shib"
   },
   auth: {
     type: 'dict_auth',
@@ -12,7 +12,7 @@ var servers = exports.servers = {
   },
   executer: {
     name: 'hiveserver2',
-    host: 'hive.platform.chaordicsystems.com',
+    host: 'hive.platform.linximpulse.net',
     port: 10001,
     support_database: true,
     default_database: 'default'
