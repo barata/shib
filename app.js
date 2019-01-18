@@ -87,6 +87,10 @@ app.get('/', function(req, res){
   client.end();
 });
 
+app.get('/status', function(req, res){
+  res.send('OK');
+});
+
 app.post('/auth', function(req, res){
   var auth = shib.auth();
 
