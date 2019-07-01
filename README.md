@@ -555,8 +555,9 @@ limitations under the License.
 ## Docker
 
 Commands to generate a new docker image:
+```bash
 docker build .
 docker tag {generated image hash} docker-registry.chaordicsystems.com:5000/platform-shib:{lastest-tag + 1}
 docker push docker-registry.chaordicsystems.com:5000/platform-shib:{lastest-tag + 1}
-
+```
 update marathon/k8s with the latest shib image version
